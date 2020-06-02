@@ -14,7 +14,7 @@ function InterviewsList({ interviews }){
 		<div>
 			{interviews.map(item => (
 	     		<h1 key={item.id}>
-	          <Link to={`/interviews/${item.id}`}>{item.id} {item.topic}</Link>
+	          <Link to={`/interviews/show/${item.id}`}>{item.id} {item.topic}</Link>
 	        </h1>
 	     	))}
 		</div>
